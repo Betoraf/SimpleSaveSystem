@@ -19,13 +19,13 @@ SimpleSaveSystem is a lightweight and easy-to-use saving system for Unity that a
 To save a value, use the `Set<T>` method, where `T` is the data type of the value you wish to save. It will save the value with a unique name (key).
 
 ```csharp
-SimpleSaveSystem.Set("playerScore", 100);
+SimpleSaveSystem.Set<int>("playerScore", 100);
 ```
 
 ### Get a Value
 To retrieve a saved value, use the `Get<T>` method, where `T` is the data type of the value. If the value doesn't exist, it will return the default value you specify.
 
 ```csharp
-int playerScore = SimpleSaveSystem.Get("playerScore", 0);
+int playerScore = SimpleSaveSystem.Get<int>("playerScore", 0);
 ```
 
